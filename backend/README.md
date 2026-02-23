@@ -46,6 +46,23 @@ Hoặc set biến môi trường (Windows PowerShell):
 $env:ConnectionStrings__DefaultConnection = "Host=localhost;Port=5432;Database=mower_management;Username=postgres;Password=postgres"
 ```
 
+## EF Core migrations
+
+Tạo migration lần đầu (sau khi thêm/sửa entity):
+
+```bash
+cd backend
+dotnet ef migrations add InitialCreate --output-dir Data/Migrations
+```
+
+Cập nhật database:
+
+```bash
+dotnet ef database update
+```
+
+(Xem lại connection string trong `appsettings.json` trước khi chạy.)
+
 ## Chạy API
 
 ```bash
