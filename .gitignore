@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Build
+frontend/dist/
+backend/bin/
+backend/obj/
+*.dll
+*.pdb
+*.user
+*.suo
+
+# IDE / Editor
+.vs/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+backend/appsettings.Development.json
+appsettings.*.local.json
+**/secrets.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
